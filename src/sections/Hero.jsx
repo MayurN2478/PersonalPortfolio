@@ -153,10 +153,6 @@ function Hero() {
           className="relative flex justify-center items-center"
           onMouseMove={handleMouseMove}
         >
-          <div className="absolute w-[280px] md:w-[420px] h-[280px] md:h-[420px] bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 blur-3xl opacity-20 rounded-full"></div>
-
-          <div className="absolute w-[240px] md:w-[360px] h-[240px] md:h-[360px] bg-white/5 backdrop-blur-xl rounded-full border border-white/10"></div>
-
           <motion.div
             animate={{
               x: position.x,
