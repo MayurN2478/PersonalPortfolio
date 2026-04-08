@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { MdDownload } from "react-icons/md";
 import lottie from "lottie-web";
 import devAnimation from "../assets/robot.json";
+import { FaLinkedin } from "react-icons/fa";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -137,7 +138,7 @@ function Hero() {
               onClick={() => {
                 const el = document.getElementById("projects");
                 if (el) {
-                  window.history.replaceState(null, "", "#projects"); // clean hash
+                  window.history.replaceState(null, "", "#projects");
                   el.scrollIntoView({ behavior: "smooth" });
                 }
               }}
@@ -145,6 +146,16 @@ function Hero() {
             >
               View Projects
             </button>
+
+            {/* ✅ ADD THIS HERE */}
+            <a
+              href="https://www.linkedin.com/in/mayurn2478/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-blue-600 hover:bg-blue-700 transition flex items-center justify-center"
+            >
+              <FaLinkedin className="text-white text-xl" />
+            </a>
           </motion.div>
         </motion.div>
 
